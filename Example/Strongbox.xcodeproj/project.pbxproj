@@ -12,6 +12,12 @@
 		4D4CFAE91DAAE61400052D06 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4CFAE61DAAE54C00052D06 /* Tests.swift */; };
 		4D4CFAEB1DAAE66A00052D06 /* Strongbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4CFAEA1DAAE66A00052D06 /* Strongbox.swift */; };
 		4D875F701DAAEAA400685882 /* Strongbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4CFAEA1DAAE66A00052D06 /* Strongbox.swift */; };
+		563CBFCC1EAA28D8005DE832 /* Strongbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 563CBFCA1EAA28D8005DE832 /* Strongbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		563CBFCF1EAA28D8005DE832 /* Strongbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563CBFC81EAA28D8005DE832 /* Strongbox.framework */; };
+		563CBFD01EAA28D8005DE832 /* Strongbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 563CBFC81EAA28D8005DE832 /* Strongbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		563CBFD51EAA28F3005DE832 /* Strongbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4CFAEA1DAAE66A00052D06 /* Strongbox.swift */; };
+		563CBFD71EAA291C005DE832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563CBFD61EAA291C005DE832 /* Foundation.framework */; };
+		563CBFD91EAA2923005DE832 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563CBFD81EAA2923005DE832 /* Security.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -20,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		563CBFCD1EAA28D8005DE832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 563CBFC71EAA28D8005DE832;
+			remoteInfo = Strongbox;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -29,6 +42,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		563CBFD41EAA28D8005DE832 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				563CBFD01EAA28D8005DE832 /* Strongbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A1B88BE047D5A9A64030E0F /* Strongbox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Strongbox.podspec; path = ../Strongbox.podspec; sourceTree = "<group>"; };
 		1365460C4E3DF016F914C3AC /* Pods-Strongbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strongbox_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Strongbox_Tests/Pods-Strongbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +64,11 @@
 		4D4CFAE61DAAE54C00052D06 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		4D4CFAE81DAAE5B500052D06 /* Strongbox_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Strongbox_Example.entitlements; sourceTree = "<group>"; };
 		4D4CFAEA1DAAE66A00052D06 /* Strongbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strongbox.swift; path = ../../Strongbox/Classes/Strongbox.swift; sourceTree = "<group>"; };
+		563CBFC81EAA28D8005DE832 /* Strongbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Strongbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		563CBFCA1EAA28D8005DE832 /* Strongbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strongbox.h; sourceTree = "<group>"; };
+		563CBFCB1EAA28D8005DE832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563CBFD61EAA291C005DE832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		563CBFD81EAA2923005DE832 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		607FACD01AFB9204008FA782 /* Strongbox_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strongbox_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,11 +86,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		563CBFC41EAA28D8005DE832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563CBFD91EAA2923005DE832 /* Security.framework in Frameworks */,
+				563CBFD71EAA291C005DE832 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4718E59E36D42C2CD1065A04 /* Pods_Strongbox_Example.framework in Frameworks */,
+				563CBFCF1EAA28D8005DE832 /* Strongbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +126,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		563CBFC91EAA28D8005DE832 /* Strongbox */ = {
+			isa = PBXGroup;
+			children = (
+				563CBFCA1EAA28D8005DE832 /* Strongbox.h */,
+				563CBFCB1EAA28D8005DE832 /* Info.plist */,
+			);
+			path = Strongbox;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +142,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Strongbox */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				563CBFC91EAA28D8005DE832 /* Strongbox */,
 				607FACD11AFB9204008FA782 /* Products */,
 				264897FB9239C2240EC99FAB /* Pods */,
 				B2BC34E146D9183E70E1574B /* Frameworks */,
@@ -102,6 +154,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* Strongbox_Example.app */,
 				607FACE51AFB9204008FA782 /* Strongbox_Tests.xctest */,
+				563CBFC81EAA28D8005DE832 /* Strongbox.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +212,8 @@
 		B2BC34E146D9183E70E1574B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				563CBFD81EAA2923005DE832 /* Security.framework */,
+				563CBFD61EAA291C005DE832 /* Foundation.framework */,
 				6C7B1B37A965E6B4F64F2DEA /* Pods_Strongbox_Example.framework */,
 				6E5C4E8096974DA7B7257D3C /* Pods_Strongbox_Tests.framework */,
 			);
@@ -167,7 +222,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		563CBFC51EAA28D8005DE832 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563CBFCC1EAA28D8005DE832 /* Strongbox.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		563CBFC71EAA28D8005DE832 /* Strongbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 563CBFD31EAA28D8005DE832 /* Build configuration list for PBXNativeTarget "Strongbox" */;
+			buildPhases = (
+				563CBFC31EAA28D8005DE832 /* Sources */,
+				563CBFC41EAA28D8005DE832 /* Frameworks */,
+				563CBFC51EAA28D8005DE832 /* Headers */,
+				563CBFC61EAA28D8005DE832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Strongbox;
+			productName = Strongbox;
+			productReference = 563CBFC81EAA28D8005DE832 /* Strongbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		607FACCF1AFB9204008FA782 /* Strongbox_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Strongbox_Example" */;
@@ -178,10 +262,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				B6CAEFFCE80878C40DAECC08 /* [CP] Embed Pods Frameworks */,
 				CA36578F23D539BF4CE50C74 /* [CP] Copy Pods Resources */,
+				563CBFD41EAA28D8005DE832 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				563CBFCE1EAA28D8005DE832 /* PBXTargetDependency */,
 			);
 			name = Strongbox_Example;
 			productName = Strongbox;
@@ -219,6 +305,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					563CBFC71EAA28D8005DE832 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = UH5GSL36AW;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = UH5GSL36AW;
@@ -252,11 +343,19 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* Strongbox_Example */,
 				607FACE41AFB9204008FA782 /* Strongbox_Tests */,
+				563CBFC71EAA28D8005DE832 /* Strongbox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		563CBFC61EAA28D8005DE832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +469,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		563CBFC31EAA28D8005DE832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563CBFD51EAA28F3005DE832 /* Strongbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +499,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		563CBFCE1EAA28D8005DE832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 563CBFC71EAA28D8005DE832 /* Strongbox */;
+			targetProxy = 563CBFCD1EAA28D8005DE832 /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* Strongbox_Example */;
@@ -419,6 +531,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		563CBFD11EAA28D8005DE832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UH5GSL36AW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Strongbox/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.kamil1.Strongbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		563CBFD21EAA28D8005DE832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UH5GSL36AW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Strongbox/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.kamil1.Strongbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -585,6 +753,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		563CBFD31EAA28D8005DE832 /* Build configuration list for PBXNativeTarget "Strongbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563CBFD11EAA28D8005DE832 /* Debug */,
+				563CBFD21EAA28D8005DE832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Strongbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
